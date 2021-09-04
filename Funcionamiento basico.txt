@@ -1,0 +1,16 @@
+Para la ejecucion del sistema de reconocimiento facial es necesario seguir los siguientes pasos:
+1.es necesario ejecutar "Captura de imagenes base"
+	1.modificar el valor asignado a modelo='', es necesario cambiarlo cada vez que se quiere ingresar un nuevo modelo al programa
+	2.modificar la "ruta1" de almacenamiento de los modelos. Solo una vez
+	3.indicar la ruta de la variable "ruido" correspondiente a la ubicacion de "haarcascade_frontalface_default.xml" el cual esta incluido en el repositorio
+
+2. Ejecutar el "entrenamiento":
+	1.modificar la ruta de la variable "dataruta" para que sea igual al punto 2 del paso 1.
+	2.Este paso generara un archivo llamado "EntrenamientoEigenFaceRecognizer.xml" la cual es necesaria saber su ubicacion.
+
+3. Ejecutar "Reconocimiento Facial"
+	1.modificar la ruta de la variable "dataruta" para que sea igual al punto 2 del paso 1.
+	2.modificar la ruta de "entrenamientoRecognizer.read" e introducir la ubicacion del archivo .xml crado en el punto 2 del paso 2
+	3.indicar la ruta de la variable "ruido" correspondiente a la ubicacion de "haarcascade_frontalface_default.xml" el cual esta incluido en el repositorio
+
+4.Una vez realizada estas modificaciones el programa debe de funcionar correctamente
